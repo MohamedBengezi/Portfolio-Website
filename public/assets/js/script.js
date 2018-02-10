@@ -12,6 +12,12 @@ $(function () {
         if ($(window).scrollTop() > 300) {
             $("#bio").fadeIn(2000);
         }
+        if ($(window).scrollTop() > 850) {
+          $("#project").fadeOut(200);
+        }
+        if ($(window).scrollTop() < 850) {
+          $("#project").fadeIn(200);
+        }
 
         if ($(window).scrollTop() > 900) {
             $(".Timetable").slideDown(2000);
@@ -26,5 +32,5 @@ $(function () {
         }
     });
 
-  
+
 });
